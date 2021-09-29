@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\html\\Html-css-Design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Html-css-Design"
+	}
+}
