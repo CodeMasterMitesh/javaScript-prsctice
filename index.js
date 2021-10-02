@@ -11,13 +11,13 @@
 // console.log(myDaughtername);
 
 // section 2 Data type in javaScript
-    // Six Data types
-    //1. Undefined
-    //2. Boolean
-    //3. Number   { typeof instance }
-    //4. String
-    //5. Bigint
-    //6. Symbol 
+// Six Data types
+//1. Undefined
+//2. Boolean
+//3. Number   { typeof instance }
+//4. String
+//5. Bigint
+//6. Symbol 
 
 // var myName = "mitesh prajapati";
 
@@ -26,7 +26,7 @@
 // console.log(typeof(myName));
 
 // var myAge = 26;
- // type of operator
+// type of operator
 // console.log(typeof(myAge));
 
 // var iAm Mitesha = false;
@@ -143,12 +143,12 @@
 
 // 3.Expressions And Operations
 
-    // 1.Assignment Operators
-    // 2.Arithmetic Operators
-    // 3.Comparison Operators
-    // 4.Logical Operators
-    // 5.String Operators
-    // 6.Conditional (ternary) Operators
+// 1.Assignment Operators
+// 2.Arithmetic Operators
+// 3.Comparison Operators
+// 4.Logical Operators
+// 5.String Operators
+// 6.Conditional (ternary) Operators
 
 // 1.Assignment Operators
 
@@ -319,14 +319,14 @@
 
 // 4 Control statment & loops
 
-    // 1.if..else
-    // 2. Switch Statment 
-    // 3. While Loop
-    // 4.Do-while Loop
-    // 5.For Loop
-    // 6.For In Loop
-    // 7.For Of Loop
-    // 8.Conditional (ternary) Operator
+// 1.if..else
+// 2. Switch Statment 
+// 3. While Loop
+// 4.Do-while Loop
+// 5.For Loop
+// 6.For In Loop
+// 7.For Of Loop
+// 8.Conditional (ternary) Operator
 
 // 1 if..Else
 // The if Statment executes a statment if specified condition truthy.
@@ -425,15 +425,15 @@
 //     case 'circle': 
 //     console.log("the area of the circle is : " + PI*r**2);
 //         break;
-   
+
 //     case 'triangle' :
 //     console.log("the area of the triangle is : " + (l*b/2));
 //         break;
-    
+
 //     case 'rectangle' :
 //     console.log("the area of the rectangle is : " + (l*b));
 //         break;
-    
+
 //     default:
 //     console.log("please enter valid data");
 // }
@@ -517,7 +517,7 @@
 //  function parameters are the name listed  in the functions's defination.
 // function  arguments are the real value passes to the function. 
 
- 
+
 // function sum(a,b){
 //     var sum = a+b;
 //     console.log(sum);
@@ -718,7 +718,7 @@
 
 // 1. traversal in array 
 
-var myFriends = ['Mitesh','Bharat','Jignesh','Pushpa','Maitri','Ashok','Hema'];
+// var myFriends = ['Mitesh', 'Bharat', 'Jignesh', 'Pushpa', 'Maitri', 'Ashok', 'Hema'];
 // console.log(myFriends[myFriends.length - 1]);
 // console.log( myFriends[1] );
 
@@ -742,7 +742,7 @@ var myFriends = ['Mitesh','Bharat','Jignesh','Pushpa','Maitri','Ashok','Hema'];
 
 // for each() loop 
 
-var myFriends = ['Mitesh ','Bharat ','Jignesh ','Pushpa ','Maitri ','Ashok ','Hema '];
+// var myFriends = ['Mitesh ', 'Bharat ', 'Jignesh ', 'Pushpa ', 'Maitri ', 'Ashok ', 'Hema '];
 
 // myFriends.forEach(function(element, index, array){
 //     console.log(element + "index :" + index + "array " + array);
@@ -1124,9 +1124,21 @@ var myFriends = ['Mitesh ','Bharat ','Jignesh ','Pushpa ','Maitri ','Ashok ','He
 // console.log(new Date().toLocaleString()); // 29/9/2021, 11:29:03 pm
 // console.log(new Date().toString()); // Wed Sep 29 2021 23:30:23 GMT+0530 (India Standard Time)
 
+//practice
+
+// const curDate = new Date();
+// console.log(curDate);
+// console.log(curDate.toLocaleString());
+// console.log(curDate.toString());
+
 // Date.now()
 // returns the numeric value correspanding time the number 
 // of millisecond elapsed january 1 1970 UTC;
+
+// Practice
+
+// const curMillisecond = Date.now();
+// console.log(curMillisecond); //1633153392593
 
 // console.log(Date.now());
 
@@ -1134,6 +1146,10 @@ var myFriends = ['Mitesh ','Bharat ','Jignesh ','Pushpa ','Maitri ','Ashok ','He
 // 7 number specific year , month , day , hour,minutes ,second,
 // and millisecond (in that order)
 // note: javascript counts months from 0 to 11;
+
+// Practice 
+// var curDate = new Date(2022, 0, 1, 01, 0, 0);
+// console.log(curDate.toLocaleString());
 
 // var d = new Date(2021, 8, 29, 23, 38, 0, 0);
 // console.log(d.toLocaleString());
@@ -1164,7 +1180,149 @@ var myFriends = ['Mitesh ','Bharat ','Jignesh ','Pushpa ','Maitri ','Ashok ','He
 // console.log(curDate.getDate());
 // console.log(curDate.getDay());
 
-// how to set the individualy date 
+// how to set the individualy date
+
+// console.log(curDate.setFullYear(2022));
+// setFullYear() method can optionally set month and day
+//setMonth();
+//setDate();
+
+//  Time get  Method
+
+// const curTime = new Date();
+// // how to get individual time
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+
+// time set method
+// let setTime = new Date();
+
+// console.log(setTime.setTime());
+// console.log(setTime.setHours(5));
+// console.log(setTime.setMinutes(5));
+// console.log(setTime.setSeconds(5));
+// console.log(setTime.setMilliseconds(5));
+
+// Practice Time
+
+// new Date().toLocaleTimeString();
+// new Date().toLocaleDateString();
+// new Date().toLocaleString();
+
+
+
+// 9 th section:- Math Object in Jvascript
+// the javascript math object allows you to perfore mathematical tasks on Numbers 
+
+// console.log(Math.PI);
+// console.log(Math.PI);
+
+// Math.round();
+//returns the value of x rounded to its nearest integer
+
+// let num = 10.501;
+// console.log(Math.round(num));
+
+// Math.pow()
+//Math.pow(s,y) returns the value of x to the power of y
+
+// console.log(Math.pow(2,3));
+// console.log(2**3);
+
+//Math.sqrt()
+//Math.sqrt(x) returns the square root of x
+
+// console.log(Math.sqrt(25));
+// console.log(Math.sqrt(81));
+// console.log(Math.sqrt(66));
+
+// Math.abs();
+//Math.abs(x) returns the absolute (positive) value of x
+
+// console.log(Math.abs(-55));
+// console.log(Math.abs(-55.5));
+// console.log(Math.abs(-955));
+// console.log(Math.abs(4-6));
+
+// Math.ceil();
+// Math.ceil(x) returns the value of x rounded up ti its nearest integer
+
+// console.log(Math.ceil(4.51));
+// console.log(Math.round(4.51));
+// console.log(Math.ceil(99.01));
+// console.log(Math.round(99.01));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
