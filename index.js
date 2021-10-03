@@ -1256,6 +1256,314 @@
 // console.log(Math.ceil(99.01));
 // console.log(Math.round(99.01));
 
+// Math.floor() Method
+//Math.floor() method returns the value of x rounded down to its nearest integer
+
+// console.log(Math.floor(4.7));
+// console.log(Math.floor(4.1));
+
+// Math.min();
+// Math.min() can be used to find the lowest value in list of argument.
+
+// console.log(Math.min(0, 150, 30, 20, -8, -200));
+
+// Math.max();
+// Math.max() can be used to find the lowest value in list of argument.
+
+// console.log(Math.max(0, 150, 30, 20, -8, -200));
+
+// Math.random() Method 
+// Math.random() returns a random number between 0 (inclusive), and 1 ()
+
+// console.log(Math.random()*10); 
+// console.log(Math.floor(Math.random()*10));
+
+
+// Math.trunc() Method
+//Math.trunc() method returns the integer part of a number
+
+// console.log(Math.trunc(4.6));
+// console.log(Math.trunc(-99.1));
+
+// Practice time 
+// if the argument is a positive number , Math.trunc() is equivalent to 
+// Math.floor(),
+// otherwise Math.trunc() is equivalent to Math.ceil();
+
+// Sectio :-10 ===================== DOM ======================
+// Window vs document
+//DOM vs BOM
+//searching and getting elements refrence
+
+
+// window vs document
+
+        //Window                                    // document
+//window is the main container                      whereas the DOM is 
+                                                    //the child of window object
+// or we can say the flobal object 
+// and any  operation related to enrire browser 
+// window can be part of window object
+
+
+// DOM VS BOM
+                                //   WINDOW 
+// DOM // document object model                    // BOM // browser object model               // JavaScript
+                                                    // NAVIGATION                               // Object
+                                                    //SCREEN                                    //Array
+                                                    //LOCATION                                  // Function
+                                                    // FRAMES
+                                                    //HISTORY
+                                                    //XMLHttpRequest
+
+// let see more practicle on history object
+
+// function alert/confirm/promt are also a part of bom
+// they are directly not related to the document 
+//but represent pure browser methods of comunicating with the user
+
+// Practicle
+
+// alert(location.href);// shows current url
+// if (confirm("want to visit youtube?")) {
+//     location.href = "https://www.youtube.com"; // redirect to browser to another URL
+// }
+
+// Section 3 : Navigation through the DOM
+
+// 1. document.getElement
+// returns the Element that is the root element of the document
+//2. document.head
+//3.document.body
+//4.document.body.childNodes(includes tab,enter and whiteSpace)
+        // list of the direct children only 
+//5.document.children(withoght text nodes, only regular elements)
+//6:document.childNodes.length
+
+// Practice Time
+// how to check whether an element has child nodes or not?
+// we will use hasChildNodes()
+
+// Practice time
+//How to find  the child in dom tree
+//firstElementChild.firstElementChild
+//document.firstElementChild.firstElementChild.style.color = "red";
+
+
+// how to find parent node
+// document.body.parentNode
+//document.body.parentElement
+
+// How to find or access the siblings
+// document.body.nextSibling 
+// document.nextElementSibling 
+// document.previousSibling 
+// document.previousElementSibling
+
+// Section 4 How to search  the elements and the refrences
+//we will see the new file
+
+
+
+
+// 11 :-Events In javascript
+// 4 ways of writing events in javascript
+//whats is Event object?
+//Mouse Event in javascript
+//Keybord event in javascript
+//inputevent in javascript
+
+// HTML events are "things" that happen to HTML elements,
+// when javascript its used in html pages ,javascript can "react" on these events.
+
+
+// HTML Events
+// An HTML events can be something the browser does or something a user does.
+
+// section 1:- 4 ways to write events in javascript
+
+// 1: using alert();
+// 2: by calling a function ( we already seen and most common way of writing)
+// 3: using Inline events (HTML onclick="" property and elements.onclick)
+// 4: using event listners (addEventListner and IE's attachment)
+
+// check the Events HTML File 
+
+
+
+// Section 2: what is event objevt?
+// Event object is the parent object of the event object. 
+// for exemple 
+// MouseEvent,focusEvent, keyboardEvent etc
+
+
+// section 3: MouseEvent in JavaScript
+// The MouseEvent Object 
+// Event that occur when the mouse interacts with the HTML
+//document belongs to the MouseEvent Object.
+
+//Mousedown(),Mouseup()
+//mouseEnter(),
+
+
+
+// section: 4 keybord Event in javascript
+// events that occur when user presses a key on the keybord,
+// belongs to the keybordEvent object. 
+// https://www.w3schools.com/jsref/obj_keybordevent.asp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

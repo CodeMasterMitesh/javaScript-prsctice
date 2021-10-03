@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(44, 44, 87);
+            color:white;
+            text-align: center;
+        }
+        .name{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #heading{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        button{
+            padding:5px 20px;
+            background-color: rgb(178, 216, 42);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <p class="name">My Name is Mitesh</p>
+    <p class="name">My Daughter Name is Khanak</p>
+    <p class="name">My wife name is Amita</p>
+
+    <h1 id="heading">We are family</h1>
+
+    <button onclick="changeContent()">Click Me</button>
+
+    <script>
+        const changeContent = () => {
+            // we directly write
+            // document.getElementById("heading").innerHTML = "We Are Beautiful Family";
+           
+            //by taking refrence , heading is the object hear
+            // const newContent = document.getElementById("heading");
+            // newContent.innerHTML = "we are beautifull family";
+
+            // console.log(document.getElementsByClassName("name"));
+
+            // document.querySelector(".name").innerHTML = "we are beautifull family";
+            
+            
+
+        }
+    </script>
+</body>
+</html>
