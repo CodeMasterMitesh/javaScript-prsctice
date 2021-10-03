@@ -1413,6 +1413,13 @@
 // https://www.w3schools.com/jsref/obj_keybordevent.asp
 
 
+// section 5 : InputEvents in javascript
+// the onchange event occurs when the value of an element has been changed.
+
+// for radiobuttons and checkboxes , the onchange event occurs when the 
+// checked state has been changed.
+
+
 
 
 

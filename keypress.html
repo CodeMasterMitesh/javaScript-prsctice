@@ -7,11 +7,56 @@
     <title>keypress</title>
 </head>
 <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: darkslategrey;
+        align-items: center;
+        text-align: center;
+    }
+    .main-div{
+        margin:50px 0;
+    }
+    p{
+        color:white;
+        font-weight: 900;
+    }
+    .effect-1{
+        border:none;
+        width:  300px;
+        height:50px;
+        border-radius: 10px;
+        outline: none;
+    }
 
 </style>
 <body>
-    <h1>
-        
-    </h1>
+        <div class="main-div">
+            <div>
+                <p>A function is triggered when the user is pressing a key in the input field</p>
+                <br>
+                <input type="text" name="text" class="effect-1" onkeypress="keyPress()" onkeydown="onkeyDown()" onkeyup="onkeyUp()">
+                <br>
+                <p id="keys"></p>
+            </div>
+        </div>
+
+        <script>
+            // const keyPress = () => {
+            //     document.getElementById("keys").innerHTML = `you press ${event.key} and it's code is ${event.code}`;
+            // }
+
+            const onkeyDown = () => {
+                document.getElementById("keys").innerHTML = 'key is down';
+            }
+
+            const onkeyUp = () => {
+                document.getElementById("keys").innerHTML = 'key is up';
+            }
+        </script>
+    
 </body>
 </html>
