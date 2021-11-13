@@ -29,10 +29,10 @@
 // type of operator
 // console.log(typeof(myAge));
 
-// var iAm Mitesha = false;
-// console.log(iAm Mitesha);
+// var iAmMitesha = false;
+// console.log(iAmMitesha);
 
-// console.log(typeof(iAm Mitesha));
+// console.log(typeof(iAmMitesha));
 
 // // type of operator
 // console.log(typeof(iAmMitesh));
@@ -59,10 +59,11 @@
 // console.log(iAmstandby);
 // console.log(typeof(iAmstandby));
 
+// var myName = 9033889873;
 
 // if(isNaN(myName)) {
 //     console.log("pls valid phone Number.");
-// }
+// };
 
 // ***** section 4:- Data Type in javaScript*****
 
@@ -113,7 +114,7 @@
 // var iAmUseless = null;
 // console.log(iAmUseless);
 // console.log(typeof(iAmUseless)); 
-// //  2nd Java Script Bug
+// //  2nd Java Script Bug null data type of is bug
 
 // var iAmStandby;
 // console.log(iAmStandby);
@@ -153,9 +154,11 @@
 // 1.Assignment Operators
 
 // var x = 5;
-// var y = 5;
+// var y = 6;
 
-// console.log("is both the x and y are equal or not" + x == y); //  erro show8
+// console.log(`is both the x and y are equal or nor : ${x == y}`);
+
+// // console.log("is both the x and y are equal or not" + x == y); 
 
 // console.log('is both the x and y are equal : ${x == y}');
 
@@ -332,13 +335,15 @@
 // The if Statment executes a statment if specified condition truthy.
 // if the condition false ,another statment can be executed.
 
-// var tomr = 'rain';
+// var tomr = 'cold';
 // var name = "mitesh";
 
 // if( tomr == 'rain'){
 //     console.log('take a raincoat ' + name);
+// }else if ( tomr == 'sunny' || tomr == 'cold' ){
+//     console.log('wear normal cloth ' + name);
 // }else{
-//     console.log('no need to take a raincoat ' + name);
+//         console.log('no need to take rain coat ' + name);
 // }
 
 
@@ -361,6 +366,7 @@
 // }else {
 //     console.log("The year " + year + " is not a  leap year");
 // }
+
 
 
 // Challange 
@@ -388,9 +394,9 @@
 //     console.log("you are not eligibale for vote");
 // }
 
-// var age = 15;
+// var age = 23;
 // console.log((age >= 18) ? "you can vote " : " you can't vote");
-
+// console.log((age>=23) ? "You are Eligible for love marridge" : "you are not eligible for love marridge");
 
 
 // 3. Swith Statment 
@@ -545,12 +551,19 @@
 // "function expression simply means
 // creat a function and put into the variable"
 
-// function sum(a,b){
-//     var sum = (a+b);
-//     console.log(sum);
+// function sum(a, b) {
+//         var sum = (a + b);
+//         console.log(sum);
 // }
-// var funexp = sum(5,10);
+// var funexp = sum(5, 10);
 // funexp;
+
+// function month(a,b){
+//         var month = (a/b);
+//         console.log(month);
+// }
+// var months = month(360,30);
+// months;
 
 // function fullName(name,surname){
 //     var fullName = (name + surname);
@@ -573,7 +586,11 @@
 // var funexp = sum(5,20);
 // console.log("the sum of two number is " + funexp);
 
-
+// function total(c,d){
+//         return total = c*d;
+// }
+// var totalexp = total(5,6);
+// console.log("the multiply of two number is " + totalexp);
 
 // Anonyous function example
 
@@ -718,11 +735,11 @@
 
 // 1. traversal in array 
 
-// var myFriends = ['Mitesh', 'Bharat', 'Jignesh', 'Pushpa', 'Maitri', 'Ashok', 'Hema'];
+var myFriends = ['Mitesh', 'Bharat', 'Jignesh', 'Pushpa', 'Maitri', 'Ashok', 'Hema'];
 // console.log(myFriends[myFriends.length - 1]);
 // console.log( myFriends[1] );
 
-// for loop 
+// // for loop 
 
 // for(var i = 0; i<myFriends.length;i++){
 //     console.log(myFriends[i]);
@@ -742,7 +759,7 @@
 
 // for each() loop 
 
-// var myFriends = ['Mitesh ', 'Bharat ', 'Jignesh ', 'Pushpa ', 'Maitri ', 'Ashok ', 'Hema '];
+ //var myFriends = ['Mitesh ', 'Bharat ', 'Jignesh ', 'Pushpa ', 'Maitri ', 'Ashok ', 'Hema '];
 
 // myFriends.forEach(function(element, index, array){
 //     console.log(element + "index :" + index + "array " + array);
@@ -752,7 +769,7 @@
 //     console.log(element);
 // });
 
-//fat arrow function  not working with this argument
+// fat arrow function  not working with this argument
 // myFriends.forEach((element,index,array) => {
 //     console.log(element + "index " + index + " array " + array);
 // });
@@ -771,10 +788,10 @@
 
 // const animals = ["pigs", "gots", "sheep"];
 
-// // const count = animals.push("chiken");
+// const count = animals.push("chiken");
 // animals.push("chiken","cats","cow");
 // console.log(animals);
-// // console.log(count);
+// console.log(count);
 
 // Array.prototype.unshift()
 // the unshift() method add one and more element to the 
@@ -797,7 +814,7 @@
 
 // array.prototype.pop()
 // the pop() method removes the last element from an array and returns
-// that elements thsi method changes the length of the array.
+// that elements this method changes the length of the array.
 
 
 // const plants = ["brocoli","couliflower","kale","tomato","cabbage"];
